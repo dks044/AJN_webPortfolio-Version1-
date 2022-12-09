@@ -80,7 +80,7 @@ nav>ul>li{
     height: 650px;
     text-align: center;
 
-    background-image: url(/source/Computer_Study_edit.jpg);
+    background-image: url(source/Computer_Study_edit.jpg);
     background-size: cover;
     
     
@@ -396,47 +396,47 @@ nav>ul>li{
 }
 
 #skills_stackBox_html5{
-    background-image: url(/source/html5.png);
+    background-image: url(source/html5.png);
     background-size: cover;
 }
 #skills_stackBox_css{
-    background-image: url(/source/css3.png);
+    background-image: url(source/css3.png);
     background-size: cover;
 }
 #skills_stackBox_javaScript{
-    background-image: url(/source/javascript.png);
+    background-image: url(source/javascript.png);
     background-size: cover;
 }
 #skills_stackBox_jquery{
-    background-image: url(/source/jquery.png);
+    background-image: url(source/jquery.png);
     background-size: cover;
 }
 #skills_stackBox_bootstrap{
-    background-image: url(/source/bootstrap.png);
+    background-image: url(source/bootstrap.png);
     background-size: cover;
 }
 #skills_stackBox_oracle11g{
-    background-image: url(/source/oracle11g.png);
+    background-image: url(source/oracle11g.png);
     background-size: cover;
 }
 #skills_stackBox_nodeJs{
-    background-image: url(/source/nodejs.png);
+    background-image: url(source/nodejs.png);
     background-size: cover;
 }
 #skills_stackBox_git{
-    background-image: url(/source/git.png);
+    background-image: url(source/git.png);
     background-size: cover;
 }
 #skills_stackBox_github{
-    background-image: url(/source/github.png);
+    background-image: url(source/github.png);
     background-size: cover;
 }
 #skills_stackBox_sts{
-    background-image: url(/source/sts.png);
+    background-image: url(source/sts.png);
     background-size: cover;
 }
 #skills_stackBox_vscode{
-    background-image: url(/source/visualStudio.png);
+    background-image: url(source/visualStudio.png);
     background-size: cover;
 }
 #skills_mouseOverText{
