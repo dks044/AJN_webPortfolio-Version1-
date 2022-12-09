@@ -1,0 +1,715 @@
+/*default*/
+
+body { /*position, float를 위해 설정*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Myeongjo', serif; /*폰트: 나눔명조*/
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: skyblue;
+}
+a:hover{
+    text-decoration:solid;
+    color: aqua;
+}
+hr {
+    width : 50%;
+  }
+/*default 끝*/
+
+/*nav*/
+nav {
+    
+    text-align: center;
+    
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.8s;
+    
+    color:darkgray;
+    font-size: large;
+    font-weight: bolder;
+
+    z-index: 3;
+}
+/*nav아이콘 애니메이션*/
+#navIcon{
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;}
+
+
+nav>h3{ /*블로그 제목*/
+    display: inline-block;
+    float: left;
+    margin-left: 10%;
+}
+nav>ul{ /*메뉴바*/
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 10%;
+}
+nav>ul>li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+#navAbout:hover, #navSkills:hover, 
+#navArchiving:hover, #navProject:hover,#navTitle:hover{
+    
+    color: aqua;
+    cursor: pointer;
+
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+#navTitle, #navUl>li{
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+}
+/*nav 끝*/
+
+/*aboutme*/
+.aboutme{
+    position: static;
+    clear: both;
+    position: static;
+    height: 650px;
+    text-align: center;
+
+    background-image: url(/source/Computer_Study_edit.jpg);
+    background-size: cover;
+    
+    
+}
+.aboutme_profile{
+    
+    position: absolute;
+    bottom: 50px;
+
+    
+    top: 150px;
+    left: 20%;
+    right: 20%;
+
+    color: white;
+
+}
+#aboutme_name{
+    font-size: 50px;
+    
+    
+}
+#aboutme_subName{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#aboutme_name>ul{
+    
+    margin-right: 20px;
+
+
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+}
+#aboutme_name>ul>li{
+    margin-top: 10px;
+    
+}
+.aboutme_MoreInfo{
+    
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    background-color: gray;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+
+    
+}
+.aboutme_MoreInfo:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+/*aboutme 끝*/
+/*aboutme2*/
+.aboutme2{
+    
+    height: 500px;
+    text-align: center;
+    overflow: auto;
+}
+.aboutme2_content{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#aboutme2_Title{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.aboutme2_icon{
+    float: left;
+    
+    font-size: 50px;
+
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.aboutme2_profile_contents{
+    float: right;
+}
+.aboutme2_profile1_name, .aboutme2_profile1_birth, .aboutme2_profile1_address{
+    
+    display: inline-block;
+    
+
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.aboutme2_profile2_phoneNumber,.aboutme2_profile2_email{
+
+    display: inline-block;
+    margin-left: 100px;
+}
+/*aboutme2 끝*/
+/*skills시작*/
+.skills{
+    clear: both;
+    
+    height: 850px;
+    text-align: center;
+    background-color: antiquewhite;
+    
+}
+
+.skills_Title{
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+/*프론트엔드 박스 시작*/
+.skills_FrontEnd{
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    
+
+    background-color: white;
+    width: 200px;
+    height: 30px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 10px 5px gray;
+
+    z-index: 3;
+    -webkit-transition: width 1s, height 1s;
+    transition: all width 1s, height 1s;
+}
+#skills_FrontEnd_Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
+    
+    font-size: 33px; 
+    color: red;
+}
+.skills_FrontEnd:hover{
+    
+    width: 700px; height: 200px;
+}
+
+
+.skills_FrontEnd_stack{/*프론트엔드_스텍박스*/
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    display: none;
+    
+    
+}
+/*프론트엔드 박스 끝*/
+/*백엔드 박스 시작*/
+.skills_BackEnd{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    
+
+    background-color: white;
+    width: 200px;
+    height: 30px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 10px 5px gray;
+
+    z-index: 3;
+    -webkit-transition: width 1s, height 1s;
+    transition: all width 1s, height 1s;
+}
+.skills_BackEnd:hover{
+    
+    width: 700px; height: 200px;
+}
+#skills_BackEnd_Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    font-size: 33px; 
+    color: cadetblue;
+
+}
+.skills_BackEnd_stack{/*백엔드_스텍박스*/
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    display: none;
+    
+    
+}
+/*백엔드_박스 끝*/
+/*VersionControll_박스 시작*/
+.skills_VersionControll{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    
+
+    background-color: white;
+    width: 300px;
+    height: 30px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 10px 5px gray;
+
+    z-index: 3;
+    -webkit-transition: width 1s, height 1s;
+    transition: all width 1s, height 1s;
+}
+.skills_VersionControll:hover{
+    
+    width: 700px; height: 200px;
+}
+#skills_VersionControll_Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    font-size: 33px; 
+    color: black;
+
+}
+.skills_VersionControll_stack{/*버전컨트롤_스텍박스*/
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    display: none;
+    
+    
+}
+/*VersionControll_박스 끝*/
+/*tool 박스 시작*/
+.skills_Tool{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    
+
+    background-color: white;
+    width: 150px;
+    height: 30px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 10px 5px gray;
+
+    z-index: 3;
+    -webkit-transition: width 1s, height 1s;
+    transition: all width 1s, height 1s;
+}
+.skills_Tool:hover{
+    
+    width: 700px; height: 200px;
+}
+#skills_Tool_Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    font-size: 33px; 
+    color: orange;
+
+
+
+}
+.skills_Tool_stack{/*버전컨트롤_스텍박스*/
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    display: none;
+    
+    
+}
+/*tool 박스 끝*/
+/*스텍박스 및 아이콘*/
+.skills_stackBox{
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    border: solid 3px black;
+    border-radius: 10px 10px 10px 10px;
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 3px 5px 3px gray;
+    
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari and Chrome */
+    -o-animation: fadein 10s; /* Opera */
+  
+}
+.skills_stackBox:nth-child(1){
+    margin-left: 10px;
+}
+
+#skills_stackBox_html5{
+    background-image: url(/source/html5.png);
+    background-size: cover;
+}
+#skills_stackBox_css{
+    background-image: url(/source/css3.png);
+    background-size: cover;
+}
+#skills_stackBox_javaScript{
+    background-image: url(/source/javascript.png);
+    background-size: cover;
+}
+#skills_stackBox_jquery{
+    background-image: url(/source/jquery.png);
+    background-size: cover;
+}
+#skills_stackBox_bootstrap{
+    background-image: url(/source/bootstrap.png);
+    background-size: cover;
+}
+#skills_stackBox_oracle11g{
+    background-image: url(/source/oracle11g.png);
+    background-size: cover;
+}
+#skills_stackBox_nodeJs{
+    background-image: url(/source/nodejs.png);
+    background-size: cover;
+}
+#skills_stackBox_git{
+    background-image: url(/source/git.png);
+    background-size: cover;
+}
+#skills_stackBox_github{
+    background-image: url(/source/github.png);
+    background-size: cover;
+}
+#skills_stackBox_sts{
+    background-image: url(/source/sts.png);
+    background-size: cover;
+}
+#skills_stackBox_vscode{
+    background-image: url(/source/visualStudio.png);
+    background-size: cover;
+}
+#skills_mouseOverText{
+    z-index: 2;
+    font-size: 15px;
+}
+/*skills끝*/
+/*Archiving 시작*/
+.Archiving{
+    clear: both;
+    padding-top: 10px;
+    position: static;
+    height: 700px;
+    background-color: brown;
+    text-align: center;
+}
+.Archiving_Content{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    
+}
+/*Archiving_github박스 시작*/
+.Archiving_Github{
+    float: left;
+    padding-top: 10px;
+    width: 400px;
+    height: auto+10px;
+    background-color: white;
+    margin-left: 10%;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 5px 5px black;
+
+    transition: all 1s;
+}
+.Archiving_Github:hover{
+    transform: translateY(20px);
+}
+.Archiving_Github_section1{
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    
+    
+}
+.Archiving_Github_section2{
+    margin-left: 120px;
+    text-align: left;
+}
+.Archiving_Github_section2>ul>li{
+    margin-top: 10px;
+}
+/*Archiving_github박스 끝*/
+.Archiving_NaverBlog{
+    float: right;
+    padding-top: 10px;
+    width: 500px;
+    height: auto+10px;
+    background-color: white;
+    margin-right: 10%;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 5px 5px black;
+
+    transition: all 1s;
+}
+.Archiving_NaverBlog:hover{
+    transform: translateY(20px);
+}
+.Archiving_NaverBlog_section1{
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    
+    
+}
+.Archiving_NaverBlog_section2{
+    
+    margin-left: 120px;
+    text-align: left;
+}
+.Archiving_NaverBlog_section2>ul>li{
+    margin-top: 10px;
+}
+/*Archiving 끝*/
+/*Project 시작*/
+.Project{
+    padding-top: 50px;
+    position: static;
+    height: 1500px;
+    background-color: cadetblue;
+    text-align: center;
+}
+.Project_Content{
+    margin-top: 10px;
+    
+}
+.Project_Content_doroowa{
+    
+
+    padding-top: 15PX;
+    padding-left: 15PX;
+    padding-right: 15PX;
+    padding-bottom: 15px;
+    width: 1000px;
+    height: auto+20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 5px 5px black;
+
+    transition: all 1s;
+}
+.Project_Content_doroowa:hover{
+    transform: translateY(10px);
+}
+#Project_Content_doroowaTitle{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#Project_Content_doroowaTitle_sub{
+    display: inline-block;
+    top: 10px;
+    color: darkgray;
+    font-size: 15px;
+}
+.Project_Content_doroowa_section1{
+    float: left;
+
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#Project_Content_doroowa_section1_picture{
+    border-radius: 20px 20px 20px 20px;
+}
+.Project_Content_doroowa_section2{
+    text-align: center;
+    
+}
+
+.Project_Content_doroowa_section2_link>a{
+    color: black;
+    font-size: 50px;
+    
+}
+.Project_Content_doroowa_section2_link>a:hover{
+    color: skyblue;
+}
+/*AjnPortfolio 시작*/
+.Project_Content_AJNPortfolio{
+    margin-top: 55px;
+    padding-top: 15PX;
+    padding-left: 15PX;
+    padding-right: 15PX;
+    padding-bottom: 15px;
+    width: 1000px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 5px 5px black;
+
+    transition: all 1s;
+}
+.Project_Content_AJNPortfolio:hover{
+    transform: translateY(10px);
+}
+#Project_Content_AJNPortfolioTitle{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+}
+#Project_Content_AJNPortfolioTitle_sub{
+    display: inline-block;
+    top: 10px;
+    color: darkgray;
+    font-size: 15px;
+}
+.Project_Content_AJNPortfolio_section1{
+    float: left;
+
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+#Project_Content_AJNPortfolio_section1_picture{
+    border-radius: 20px 20px 20px 20px;
+}
+.Project_Content_AJNPortfolio_section2{
+    text-align: center;
+    
+}
+
+.Project_Content_AJNPortfolio_section2_link>a{
+    color: black;
+    font-size: 50px;
+    
+}
+.Project_Content_AJNPortfolio_section2_link>a:hover{
+    color: skyblue;
+}
+/*AjnPortfolio 끝*/
+/*Project 끝*/
+/*footer 시작*/
+#footer{
+    clear: both;
+    padding-top: 50px;
+    position: static;
+    height: 70px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    
+}
+/*footer 끝*/
+
+/*애니메이션/
+/*블로그아이콘 360도 회전*/
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*페이드인*/
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*애니메이션 끝/
