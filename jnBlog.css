@@ -466,7 +466,7 @@ nav>ul>li{
     width: 400px;
     height: auto+10px;
     background-color: white;
-    margin-left: 200px;
+    margin-left: 10%;
 
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 5px 5px black;
@@ -497,8 +497,7 @@ nav>ul>li{
     width: 500px;
     height: auto+10px;
     background-color: white;
-    margin-top: 60px;
-    margin-right: 200px;
+    margin-right: 10%;
 
     border-radius: 20px 20px 20px 20px;
     box-shadow: 3px 5px 5px black;
@@ -528,7 +527,7 @@ nav>ul>li{
 .Project{
     padding-top: 50px;
     position: static;
-    height: 1500px;
+    height: 3000px;
     background-color: cadetblue;
     text-align: center;
 }
@@ -644,6 +643,54 @@ nav>ul>li{
     color: skyblue;
 }
 /*AjnPortfolio 끝*/
+/*AJNQNA 시작*/
+.Project_Content_AJNQNA{
+    margin-top: 55px;
+    padding-top: 15PX;
+    padding-left: 15PX;
+    padding-right: 15PX;
+    padding-bottom: 15px;
+    width: 1000px;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 5px 5px black;
+
+    transition: all 1s;
+}
+.Project_Content_AJNQNA:hover{
+    transform: translateY(10px);
+}
+.Project_Content_AJNQNA_TitleImage{
+    width: 900px;
+    height: 400px;
+    
+}
+#Project_Content_AJNQNA_Title{
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bolder;
+}
+#Project_Content_AJNQNA_subTitle{
+    display: inline-block;
+    font-size: 15px;
+    color: darkgrey;
+}
+
+.Project_Content_AJNQNA_section{
+    /* font-size: 30px; */
+}
+.Project_Content_AJNQNA_section_link>a{
+    color: black;
+    font-size: 50px;
+}
+.Project_Content_AJNQNA_section_link>a:hover{
+    color: skyblue;
+}
+
+/*AJNQNA 끝*/
 /*Project 끝*/
 /*footer 시작*/
 #footer{
