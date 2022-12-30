@@ -187,7 +187,7 @@ nav>ul>li{
 .skills{
     clear: both;
     
-    height: 850px;
+    height: 950px;
     text-align: center;
     background-color: antiquewhite;
     
@@ -363,7 +363,7 @@ nav>ul>li{
 
 
 }
-.skills_Tool_stack{/*버전컨트롤_스텍박스*/
+.skills_Tool_stack{/*툴_스텍박스*/
     margin-left: auto;
     margin-right: auto;
 
@@ -373,6 +373,50 @@ nav>ul>li{
     
 }
 /*tool 박스 끝*/
+/*Deployment 박스 시작*/
+.skills_Deployment{
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2px;
+    padding-bottom: 10px;
+    
+
+    background-color: white;
+    width: 240px;
+    height: 30px;
+
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 3px 10px 5px gray;
+
+    z-index: 3;
+    -webkit-transition: width 1s, height 1s;
+    transition: all width 1s, height 1s;
+}
+.skills_Deployment:hover{
+    
+    width: 700px; height: 200px;
+}
+#skills_Deployment_Title{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    font-size: 33px; 
+    color: skyblue;
+
+
+
+}
+.skills_Deployment_stack{/*Deployment_스텍박스*/
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10px;
+    display: none;
+    
+    
+}
+/*Deployment 박스 끝*/
 /*스텍박스 및 아이콘*/
 .skills_stackBox{
     float: left;
@@ -439,7 +483,11 @@ nav>ul>li{
     background-image: url(/JnBlogProject/source/visualStudio.png);
     background-size: cover;
 }
-#skills_mouseOverText{
+#skills_stackBox_aws{
+    background-image: url(/JnBlogProject/source/AWS.png);
+    background-size: cover;
+}
+#skills_mouseOverText{/*마우스를 올려보세요!*/
     z-index: 2;
     font-size: 15px;
 }

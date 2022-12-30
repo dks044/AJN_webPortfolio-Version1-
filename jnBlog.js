@@ -112,7 +112,7 @@ function Skills_VersionControll_mouseOver() {
 function Skills_VersionControll_mouseOut(){
     skills_VersionControll_stack.style.display='none';
 }
-//toll박스 마우스오버아웃
+//tool박스 마우스오버아웃
 const skills_Tool = document.querySelector('.skills_Tool');
 const skills_Tool_stack = document.querySelector('.skills_Tool_stack');
 skills_Tool.addEventListener('mouseover',Skills_Tool_mouseOver);
@@ -123,7 +123,17 @@ function Skills_Tool_mouseOver() {
 function Skills_Tool_mouseOut(){
     skills_Tool_stack.style.display='none';
 }
-
+//Deployment박스 마우스오버아웃
+const skills_Deployment = document.querySelector('.skills_Deployment');
+const skills_Deployment_stack = document.querySelector('.skills_Deployment_stack');
+skills_Deployment.addEventListener('mouseover',Skills_Deployment_mouseOver);
+skills_Deployment.addEventListener('mouseout',Skills_Deployment_mouseOut)
+function Skills_Deployment_mouseOver() {
+    skills_Deployment_stack.style.display='block';
+}
+function Skills_Deployment_mouseOut(){
+    skills_Deployment_stack.style.display='none';
+}
 /*skills 끝*/
 
 
